@@ -19,8 +19,24 @@ function checkpythogurous(a,b,c){
 //console.log(checkpythogurous(3,4,5))
 function specialPythagoreanTriplet(n) {
     let sumOfabc = n;
-   
+    var prod;
+    var pycheck;
+    for(var i = 1;i<n/2;i++){
+        for(var j=1;j<n/2;j++){
+            var k = n-i-j;
+            if(k>0){
+                
+                pycheck = checkpythogurous(i,j,k);
+                if(pycheck == 1 && (i+j+k == n)){
+                    prod = productabc(i,j,k)
+                   // console.log(prod);
+                }
+            }
+            }
+        }
     
+    console.log(prod);
+    return prod;
    }
    
    specialPythagoreanTriplet(1000);
