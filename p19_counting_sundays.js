@@ -1,6 +1,6 @@
 // Project Euler: Problem 19: Counting Sundays
 function leapyear(n){
-    if(n%4===0||n%400===0&&n%100!==0){
+    if((n % 4 === 0) && (n % 400 === 0) || (n % 100 !== 0)){
         return 1;
     }
     else{
@@ -18,7 +18,7 @@ function first_Day_of_the_year(start) {
          StartDayoftheyear = 1 + (StartDayoftheyear%7);
      }
   }
-  //console.log(StartDayoftheyear);
+  console.log(StartDayoftheyear);
   return StartDayoftheyear;
 }
 //first_Day_of_the_year(1943)
