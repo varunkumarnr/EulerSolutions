@@ -19,12 +19,12 @@
 
 function fact(x){
     
-    console.log(x);
+    //console.log(x);
     let acc = 1n;
     while (x > 1n) {
       acc = acc * --x;
     }
-    console.log(acc);
+    //console.log(acc);
     return acc;
   }
   function sumFactorialDigits(x) {
